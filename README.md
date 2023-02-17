@@ -1,8 +1,7 @@
-
-
 ## Setup
 
 ### Install Docker
+
 <ul>
     <li> (Mac, Linux) Follow the [installation instructions](https://docs.docker.com/get-docker/) </li>
     <li>(Windows):
@@ -12,7 +11,6 @@
             </ul>
             </li>
             </ul>
-
 
 ### Install VS Code.
 
