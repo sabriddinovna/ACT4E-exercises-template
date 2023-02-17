@@ -1,0 +1,23 @@
+[project]
+name = "ACT4E-MySolutions"
+version = "0.1"
+authors = [{name = "", email = ""}]
+dependencies = [
+    "ACT4E-exercises",
+    ]
+
+[tool]
+[tool.poetry]
+name = "ACT4E-MySolutions"
+version = "0.1"
+description = ""
+authors = [" <>"]
+packages = [
+    {from = "src", include = "act4e_solutions"},
+    ]
+
+[tool.setuptools]
+packages = [
+    "act4e_solutions",
+    ]
+package-dir = {"" = "src"}
