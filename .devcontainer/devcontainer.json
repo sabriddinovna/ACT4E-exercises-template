@@ -34,7 +34,7 @@
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
 		"ms-python.python",
-		"tht13.html-preview-vscode",
+		"tht13.html-preview-vscode"
 		// "ms-python.vscode-pylance"
 	],
 
