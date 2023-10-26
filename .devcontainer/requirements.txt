@@ -1,2 +1,2 @@
-ACT4E-exercises
+ACT4E-exercises>=7.3.2310261331
 pre-commit
