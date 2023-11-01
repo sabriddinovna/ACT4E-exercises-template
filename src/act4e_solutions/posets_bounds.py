@@ -1,4 +1,4 @@
-from typing import Any, List, Optional, overload, TypeVar
+from typing import Any, List, Optional, overload, TypeVar, Collection
 
 import act4e_interfaces as I
 
@@ -19,10 +19,10 @@ class SolFinitePosetConstructionOpposite(I.FinitePosetConstructionOpposite):
 
 
 class SolFinitePosetSubsetProperties(I.FinitePosetSubsetProperties):
-    def is_chain(self, fp: I.FinitePoset[X], s: List[X]) -> bool:
+    def is_chain(self, fp: I.FinitePoset[X], s: Collection[X]) -> bool:
         raise NotImplementedError()
 
-    def is_antichain(self, fp: I.FinitePoset[X], s: List[X]) -> bool:
+    def is_antichain(self, fp: I.FinitePoset[X], s: Collection[X]) -> bool:
         raise NotImplementedError()
 
 
