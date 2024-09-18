@@ -14,10 +14,17 @@ B = TypeVar("B")
 
 class SolFiniteRelationProperties(I.FiniteRelationProperties):
     def is_surjective(self, fr: I.FiniteRelation[Any, Any]) -> bool:
-        raise NotImplementedError()
+        codomain=fr.codomain().elements() #elements of B
+        relation=fr.elements() #pairs which aRb
+        mapped=set(b for (_,b) in relation)
+        return all(b in mapped for b in codomain)
 
     def is_defined_everywhere(self, fr: I.FiniteRelation[Any, Any]) -> bool:
-        raise NotImplementedError()
+        domain=fr.domain().elements()
+        relation=fr.elements() #xRy
+        mapped= set(x for (x,_) in relation)
+        return all( x in mapped for x in domain)
+        
 
     def is_injective(self, fr: I.FiniteRelation[Any, Any]) -> bool:
         raise NotImplementedError()
